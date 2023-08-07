@@ -99,6 +99,42 @@
           }
         }
       }
+    },
+    "pranav-logicrays-users": {
+      "projectType": "library",
+      "root": "projects/pranav-logicrays/users",
+      "sourceRoot": "projects/pranav-logicrays/users/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/pranav-logicrays/users/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/pranav-logicrays/users/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/pranav-logicrays/users/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/pranav-logicrays/users/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
