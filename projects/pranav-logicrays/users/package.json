@@ -1,12 +1,23 @@
 {
-  "name": "pranav-logicrays-users",
-  "version": "0.0.1",
+  "name": "pranav-logicrays-user-data",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^16.1.0",
     "@angular/core": "^16.1.0"
   },
+  
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PranavLR/npm-Angular.git"
+  },
+  "author": "Pranav Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PranavLR/npm-Angular/issues"
+  },
+  "homepage": "https://github.com/PranavLR/npm-Angular#readme",
   "sideEffects": false
 }
